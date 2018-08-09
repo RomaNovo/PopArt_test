@@ -12,7 +12,7 @@ body {
   font-family: MyriadPro;
   margin: 0;
   padding: 0;
-  color: #f69ea5; }
+  color: #f2839a; }
 
 .container {
   max-width: 1200px;
@@ -44,8 +44,7 @@ body {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: blue; }
+          flex-direction: column; }
 
 .header {
   background-color: #fed4bc; }
@@ -97,15 +96,19 @@ body {
     width: 70%;
     text-align: center;
     text-transform: uppercase;
-    color: #f69ea5; }
+    color: #f2839a; }
   .content__descr {
     margin: 20px auto 0;
     width: 70%;
     text-align: center;
     text-transform: uppercase;
-    color: #f69ea5; }
+    color: #f2839a; }
   .content__block {
-    margin-top: 30px; }
+    margin-top: 30px;
+    background-color: #fed4bc;
+    padding: 20px 0;
+    -webkit-border-radius: 18px;
+            border-radius: 18px; }
     .content__block--descr {
       text-align: center;
       margin-bottom: 15px; }
@@ -122,19 +125,19 @@ body {
           border-radius: 18px;
   margin-bottom: 10px;
   outline: none;
-  color: #f69ea5; }
+  color: #f2839a; }
   .form__input_top {
     background-color: #fff2eb; }
   .form__input::-webkit-input-placeholder {
-    color: #f69ea5; }
+    color: #f2839a; }
   .form__input::-moz-placeholder {
-    color: #f69ea5; }
+    color: #f2839a; }
   .form__input:-ms-input-placeholder {
-    color: #f69ea5; }
+    color: #f2839a; }
   .form__input::-ms-input-placeholder {
-    color: #f69ea5; }
+    color: #f2839a; }
   .form__input::placeholder {
-    color: #f69ea5; }
+    color: #f2839a; }
 
 .form__submit {
   display: block;
@@ -146,7 +149,8 @@ body {
   padding: 10px 0;
   color: #fff;
   text-transform: uppercase;
-  outline: none; }
+  outline: none;
+  cursor: pointer; }
   .form__submit:hover {
     background-color: #df194f; }
 
@@ -172,10 +176,10 @@ body {
     font-size: 12px; }
     .footer__support--link {
       text-decoration: none;
-      color: #f69ea5; }
+      color: #f2839a; }
     .footer__support:after {
       content: '';
       display: block;
       width: 100%;
       height: 1px;
-      background-color: #f69ea5; }
+      background-color: #f2839a; }
