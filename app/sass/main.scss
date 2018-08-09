@@ -13,9 +13,8 @@
 }
 
 body {
+	@extend %reset;
 	font-family: MyriadPro;
-	margin: 0;
-	padding: 0;
 	color: map-get($colors, text);	
 }
 
@@ -86,25 +85,23 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 
-
-
 	&__wrp {
 		padding-top: 30px;
 	}
 
 	&__title {
+		@extend %reset;
 		margin: 0 auto;
 		width: 70%;
+		font-size: 13px;
 		text-align: center;
 		text-transform: uppercase;
-		color: map-get($colors, text);
-		padding: 0;
-		font-size: 13px;
+		color: map-get($colors, text);	
 	}
 
 	&__descr {
+		@extend %reset;
 		margin: 20px auto 0;
-		padding: 0;
 		width: 70%;
 		text-align: center;
 		text-transform: uppercase;
@@ -114,17 +111,16 @@ body {
 
 	&__block {
 		margin-top: 65px;
-		background-color: map-get($colors, bg);
 		padding: 20px 0;
 		border-radius: 18px;
 		position: relative;
+		background-color: map-get($colors, bg);
 		
-
 		&:after {
-			content: '';
-			display: block;
+			content: '';	
 			width: 75px;
 			height: 75px;
+			display: block;
 			position: absolute;
 			top: 0;
 			right: 0;
@@ -152,11 +148,11 @@ body {
 	}
 	
 	&__input {
+		margin-bottom: 10px;
 		padding: 10px 15px;
 		width: 100%;
 		border: 1px solid map-get($colors, btn);
 		border-radius: 18px;
-		margin-bottom: 10px;
 		outline: none;
 		color: map-get($colors, text);
 
@@ -170,12 +166,12 @@ body {
 	}
 
 	&__submit {
+		padding: 10px 0;
 		display: block;
 		width: 100%;
 		background-color: map-get($colors, btn);
 		border: none;
 		border-radius: 18px;
-		padding: 10px 0;
 		color: #fff;
 		text-transform: uppercase;
 		outline: none;

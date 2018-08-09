@@ -1,3 +1,7 @@
+body, .content__title, .content__descr {
+  margin: 0;
+  padding: 0; }
+
 @font-face {
   font-family: 'MyriadPro';
   src: url("../font/MyriadPro-Regular.woff") format("woff");
@@ -10,8 +14,6 @@
 
 body {
   font-family: MyriadPro;
-  margin: 0;
-  padding: 0;
   color: #f2839a; }
 
 .container {
@@ -94,14 +96,12 @@ body {
   .content__title {
     margin: 0 auto;
     width: 70%;
+    font-size: 13px;
     text-align: center;
     text-transform: uppercase;
-    color: #f2839a;
-    padding: 0;
-    font-size: 13px; }
+    color: #f2839a; }
   .content__descr {
     margin: 20px auto 0;
-    padding: 0;
     width: 70%;
     text-align: center;
     text-transform: uppercase;
@@ -109,16 +109,16 @@ body {
     font-size: 12px; }
   .content__block {
     margin-top: 65px;
-    background-color: #fed4bc;
     padding: 20px 0;
     -webkit-border-radius: 18px;
             border-radius: 18px;
-    position: relative; }
+    position: relative;
+    background-color: #fed4bc; }
     .content__block:after {
       content: '';
-      display: block;
       width: 75px;
       height: 75px;
+      display: block;
       position: absolute;
       top: 0;
       right: 0;
@@ -137,12 +137,12 @@ body {
   width: 70%; }
 
 .form__input {
+  margin-bottom: 10px;
   padding: 10px 15px;
   width: 100%;
   border: 1px solid #ef6f92;
   -webkit-border-radius: 18px;
           border-radius: 18px;
-  margin-bottom: 10px;
   outline: none;
   color: #f2839a; }
   .form__input_top {
@@ -159,13 +159,13 @@ body {
     color: #f2839a; }
 
 .form__submit {
+  padding: 10px 0;
   display: block;
   width: 100%;
   background-color: #ef6f92;
   border: none;
   -webkit-border-radius: 18px;
           border-radius: 18px;
-  padding: 10px 0;
   color: #fff;
   text-transform: uppercase;
   outline: none;
