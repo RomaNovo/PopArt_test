@@ -86,6 +86,8 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 
+
+
 	&__wrp {
 		padding-top: 30px;
 	}
@@ -95,22 +97,41 @@ body {
 		width: 70%;
 		text-align: center;
 		text-transform: uppercase;
-		color: map-get($colors, text);	
+		color: map-get($colors, text);
+		padding: 0;
+		font-size: 13px;
 	}
 
 	&__descr {
 		margin: 20px auto 0;
+		padding: 0;
 		width: 70%;
 		text-align: center;
 		text-transform: uppercase;
 		color: map-get($colors, text);
+		font-size: 12px;
 	}
 
 	&__block {
-		margin-top: 30px;
+		margin-top: 65px;
 		background-color: map-get($colors, bg);
 		padding: 20px 0;
 		border-radius: 18px;
+		position: relative;
+		
+
+		&:after {
+			content: '';
+			display: block;
+			width: 75px;
+			height: 75px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			background-image: url('../img/content-image.png');
+			background-size: cover;
+			transform: translateY(-100%);
+		}
 
 		&--descr {
 			text-align: center;
