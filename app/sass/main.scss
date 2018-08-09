@@ -1,0 +1,198 @@
+@import "mixin";
+@import "variables";
+
+@font-face {
+  font-family: 'MyriadPro';
+  src: url('../font/MyriadPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: MyriadPro;
+	margin: 0;
+	padding: 0;
+	color: map-get($colors, text);	
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.logo {
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/logo.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.nav {
+	display: flex;
+}
+
+.wrp {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-color: blue;
+}
+
+.header {
+	background-color: map-get($colors, bg);
+	
+	&__blocks {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		flex-flow: wrap;		
+	}
+
+	&__logo {
+		min-width: 150px;
+		height: 50px;
+	}
+
+	&__nav {
+		display: none;
+	}
+
+	&__account {
+		margin-left: auto;
+		width: 30px;
+		height: 30px;
+
+		&--icon {
+			width: 100%;
+			height: 100%;
+			background-image: url('../img/avt.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+		}
+	}
+}
+
+.content {
+	flex: 1 0 auto;
+	background-image: url('../img/content-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&__wrp {
+		padding-top: 30px;
+	}
+
+	&__title {
+		margin: 0 auto;
+		width: 70%;
+		text-align: center;
+		text-transform: uppercase;
+		color: map-get($colors, text);	
+	}
+
+	&__descr {
+		margin: 20px auto 0;
+		width: 70%;
+		text-align: center;
+		text-transform: uppercase;
+		color: map-get($colors, text);
+	}
+
+	&__block {
+		margin-top: 30px;
+
+		&--descr {
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		&--form {
+
+		}
+	}
+}
+
+.form {
+
+	&__row {
+		margin: 0 auto 10px;
+		width: 70%;
+	}
+	
+	&__input {
+		padding: 10px 15px;
+		width: 100%;
+		border: 1px solid map-get($colors, btn);
+		border-radius: 18px;
+		margin-bottom: 10px;
+		outline: none;
+		color: map-get($colors, text);
+
+		&_top {
+			background-color: #fff2eb;
+		}
+
+		&::placeholder {
+			color: map-get($colors,text);
+		}
+	}
+
+	&__submit {
+		display: block;
+		width: 100%;
+		background-color: map-get($colors, btn);
+		border: none;
+		border-radius: 18px;
+		padding: 10px 0;
+		color: #fff;
+		text-transform: uppercase;
+		outline: none;
+
+		&:hover {
+			background-color: darken(map-get($colors, btn), 20%);
+		}
+	}
+}
+
+.footer {
+	background-color: map-get($colors, bg);
+
+	&__wrp {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		width: 100px;
+		height: 30px;
+	}
+
+	&__support {
+		font-size: 12px;
+
+		&--link {
+			text-decoration: none;
+			color: map-get($colors, text);
+		}
+
+		&:after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: map-get($colors,text);
+		}
+	}
+}
+
+

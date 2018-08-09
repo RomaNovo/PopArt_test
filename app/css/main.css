@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../font/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: MyriadPro;
+  margin: 0;
+  padding: 0;
+  color: #f69ea5; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.logo {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-position: center; }
+
+.nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.wrp {
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: blue; }
+
+.header {
+  background-color: #fed4bc; }
+  .header__blocks {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-flow: wrap;
+        -ms-flex-flow: wrap;
+            flex-flow: wrap; }
+  .header__logo {
+    min-width: 150px;
+    height: 50px; }
+  .header__nav {
+    display: none; }
+  .header__account {
+    margin-left: auto;
+    width: 30px;
+    height: 30px; }
+    .header__account--icon {
+      width: 100%;
+      height: 100%;
+      background-image: url("../img/avt.png");
+      background-repeat: no-repeat;
+      -webkit-background-size: contain;
+              background-size: contain;
+      background-position: center; }
+
+.content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  background-image: url("../img/content-bg.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
+  .content__wrp {
+    padding-top: 30px; }
+  .content__title {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f69ea5; }
+  .content__descr {
+    margin: 20px auto 0;
+    width: 70%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f69ea5; }
+  .content__block {
+    margin-top: 30px; }
+    .content__block--descr {
+      text-align: center;
+      margin-bottom: 15px; }
+
+.form__row {
+  margin: 0 auto 10px;
+  width: 70%; }
+
+.form__input {
+  padding: 10px 15px;
+  width: 100%;
+  border: 1px solid #ef6f92;
+  -webkit-border-radius: 18px;
+          border-radius: 18px;
+  margin-bottom: 10px;
+  outline: none;
+  color: #f69ea5; }
+  .form__input_top {
+    background-color: #fff2eb; }
+  .form__input::-webkit-input-placeholder {
+    color: #f69ea5; }
+  .form__input::-moz-placeholder {
+    color: #f69ea5; }
+  .form__input:-ms-input-placeholder {
+    color: #f69ea5; }
+  .form__input::-ms-input-placeholder {
+    color: #f69ea5; }
+  .form__input::placeholder {
+    color: #f69ea5; }
+
+.form__submit {
+  display: block;
+  width: 100%;
+  background-color: #ef6f92;
+  border: none;
+  -webkit-border-radius: 18px;
+          border-radius: 18px;
+  padding: 10px 0;
+  color: #fff;
+  text-transform: uppercase;
+  outline: none; }
+  .form__submit:hover {
+    background-color: #df194f; }
+
+.footer {
+  background-color: #fed4bc; }
+  .footer__wrp {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .footer__logo {
+    width: 100px;
+    height: 30px; }
+  .footer__support {
+    font-size: 12px; }
+    .footer__support--link {
+      text-decoration: none;
+      color: #f69ea5; }
+    .footer__support:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #f69ea5; }
