@@ -251,6 +251,11 @@ body {
 				width: 150px;
 				height: 150px;
 			}
+
+			@include large-screen() {
+				width: 280px;
+				height: 270px;
+			}
 		}
 
 		&--descr {

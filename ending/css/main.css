@@ -226,6 +226,10 @@ body {
         .content__block:after {
           width: 150px;
           height: 150px; } }
+      @media screen and (min-width: 1024px) {
+        .content__block:after {
+          width: 280px;
+          height: 270px; } }
     .content__block--descr {
       text-align: center;
       max-width: 160px;
