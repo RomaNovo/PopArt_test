@@ -12,10 +12,16 @@
 	box-sizing: border-box;
 }
 
+html {
+	width: 100%;
+	height: 100%;
+}
 body {
 	@extend %reset;
 	font-family: MyriadPro;
-	color: map-get($colors, text);	
+	color: map-get($colors, text);
+	width: 100%;
+	height: 100%;
 }
 
 .container {
@@ -246,6 +252,11 @@ body {
 			background-image: url('../img/content-image.png');
 			background-size: cover;
 			transform: translateY(-100%);
+
+			@include small-screen() {
+				width: 100px;
+				height: 100px;
+			}
 
 			@include medium-screen() {
 				width: 150px;
