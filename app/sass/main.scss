@@ -77,6 +77,7 @@ body {
 		margin-left: auto;
 		width: 30px;
 		height: 30px;
+		cursor: pointer;
 
 		@include medium-screen() {
 			width: 35px;
@@ -370,6 +371,11 @@ body {
 	&__logo {
 		width: 100px;
 		height: 30px;
+
+		@include large-screen() {
+			width: 120px;
+			height: 40px;
+		}
 	}
 
 	&__support {
