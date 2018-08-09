@@ -61,6 +61,11 @@ body {
 
 	&__nav {
 		display: none;
+
+		@include medium-screen() {
+			display: block;
+			margin-left: 20px;
+		}
 	}
 
 	&__account {
@@ -79,6 +84,25 @@ body {
 	}
 }
 
+.nav {
+	&__item {
+		margin-left: 20px;
+
+		&:after {
+			content: '';
+			display: block;
+			width: 0;
+			height: 2px;
+			background-color: map-get($colors, text);
+			transition: .2s;
+		}
+
+		&:hover:after {
+			width: 100%;
+		}
+	}
+}
+
 .content {
 	flex: 1 0 auto;
 	background-image: url('../img/content-bg.png');
@@ -87,6 +111,16 @@ body {
 
 	&__wrp {
 		padding-top: 30px;
+
+		@include small-screen() {
+			padding-top: 70px;
+		}
+
+		@include medium-screen() {
+			margin: 0;
+			padding: 0;
+			margin-top: 150px;
+		}
 	}
 
 	&__title {
@@ -96,7 +130,26 @@ body {
 		font-size: 13px;
 		text-align: center;
 		text-transform: uppercase;
-		color: map-get($colors, text);	
+		color: map-get($colors, text);
+		font-weight: normal;
+
+		@include small-screen() {
+			max-width: 255px;
+			&:after {
+				content: '';
+				display: block;
+				width: 100%;
+				height: 1px;
+				background-color: map-get($colors, text);
+			}
+		}
+
+		@include medium-screen() {
+			margin: 0;
+			padding: 0;
+			max-width: 465px;
+			font-size: 24px;
+		}
 	}
 
 	&__descr {
@@ -107,6 +160,20 @@ body {
 		text-transform: uppercase;
 		color: map-get($colors, text);
 		font-size: 12px;
+		font-weight: normal;
+
+		@include small-screen() {
+			margin-top: 50px;
+		}
+
+		@include medium-screen() {
+			margin: 0;
+			padding: 0;
+			margin-top: 20px;
+			font-size: 18px;
+			text-align: left;
+			width: 100%;
+		}
 	}
 
 	&__block {
@@ -115,6 +182,17 @@ body {
 		border-radius: 18px;
 		position: relative;
 		background-color: map-get($colors, bg);
+
+		@include small-screen() {
+			margin-top: 125px;
+		}
+
+		@include medium-screen() {
+			margin: 0;
+			padding: 0;
+			margin-top: 50px;
+			padding: 30px 0;
+		}
 		
 		&:after {
 			content: '';	
@@ -127,11 +205,21 @@ body {
 			background-image: url('../img/content-image.png');
 			background-size: cover;
 			transform: translateY(-100%);
+
+			@include medium-screen() {
+				width: 150px;
+				height: 150px;
+			}
 		}
 
 		&--descr {
 			text-align: center;
 			margin-bottom: 15px;
+
+			@include medium-screen() {
+				text-align: left;
+				padding-left: 40px;
+			}
 		}
 
 		&--form {
@@ -142,9 +230,32 @@ body {
 
 .form {
 
+	&__wrp {
+
+		@include medium-screen() {
+			display: flex;
+		}	
+	}
+
 	&__row {
 		margin: 0 auto 10px;
 		width: 70%;
+
+		@include medium-screen() {
+			&:first-child {
+				width: 20%;
+
+			}
+
+			&:nth-child(2) {
+				width: 40%;
+				max-width: 300px;
+			}
+
+			&:last-child {
+				width: 20%;
+			}
+		}
 	}
 	
 	&__input {
