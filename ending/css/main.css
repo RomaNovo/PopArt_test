@@ -331,6 +331,9 @@ body {
   .form__input:focus {
     -webkit-box-shadow: 0px 0px 5px 3px #f2839a;
             box-shadow: 0px 0px 5px 3px #f2839a; }
+  .form__input_novalid {
+    -webkit-box-shadow: 0px 0px 5px 3px #f2839a;
+            box-shadow: 0px 0px 5px 3px #f2839a; }
 
 .form__submit {
   padding: 10px 0;
